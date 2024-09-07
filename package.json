@@ -2,12 +2,16 @@
   "name": "hardhat-project",
   "scripts": {
     "compile": "npx hardhat compile",
-    "test": "npx hardhat test"
+    "test": "npx hardhat test",
+    "deployProxy": "npx hardhat run scripts/deployUpgradable.js --network 'arbisepolia'",
+    "upgradeProxy": "npx hardhat run scripts/upgradeUpgradable2.js --network 'arbisepolia'",
+    "verify": "npx hardhat verify --network arbisepolia 0x4692b7CeB1738d4A9Cf5397185a978F572497e27"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-ethers": "^3.0.8",
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "@nomicfoundation/hardhat-verify": "^2.0.10",
+    "dotenv": "^16.4.5",
     "hardhat": "^2.22.10"
   },
   "dependencies": {

@@ -11,3 +11,6 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat ignition deploy ./ignition/modules/Lock.js
 ```
+
+# [UUPS Proxies](https://forum.openzeppelin.com/t/uups-proxies-tutorial-solidity-javascript/7786)
+# [UUPS and remix example](https://medium.com/@pearliboy1/how-to-implement-an-upgradeable-smart-contract-with-uups-242c57f671ee)
